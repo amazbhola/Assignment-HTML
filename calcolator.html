@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Home</title>
+</head>
+
+<body style="background-color: gray; margin: 0; padding: 0;">
+    <header style="padding: 20px;">
+        <h2><a href="index.html" style="text-decoration: none;"><img src="" alt="Our Site Logo"></a></h2>
+        <ul style="list-style-type: none; display: block; text-align: right;">
+            <li style="display:inline-block;"><a href="index.html">Home</a></li>
+            <li style="display:inline-block;"><a href="about.html">About Us</a></li>
+            <li style="display:inline-block;"><a href="contact.html">Contact Us</a></li>
+            <li style="display:inline-block;"><a href="gallery.html">Gallery</a></li>
+            <li style="display:inline-block;"><a href="calcolator.html">Calcolator</a></li>
+        </ul>
+    </header>
+
+        <section style="text-align: center; padding-bottom: 20px;">
+            <h3>Calcoletor</h3>
+            <input type="number" value="0" name="" id="firstnumber" >+
+            <input type="number" value="0" name="" id="secondnumber" > = <strong id="result"></strong><br>
+            <button type="submit" onclick="calcolate()">Result</button>
+            
+        </section>
+        <footer style="background-color: black; color: white; padding: 20px; ">
+            <h3 style="margin-left: 10px; color: white;">Top Links</h3>
+            <ol type="1">
+                <li><a style="text-decoration: none; color: white;" href="index.html">Home</a></li>
+                <li><a style="text-decoration: none; color: white;" href="about.html">About Us</a></li>
+                <li><a style="text-decoration: none; color: white;" href="contact.html">Contact Us</a></li>
+                <li><a style="text-decoration: none; color: white;" href="gallery.html">Gallery</a></li>
+                <li><a style="text-decoration: none; color: white;" href="calcolator.html">Calcolator</a></li>
+            </ol>
+            <p style="text-align: center;">&copy; 2022 All Right Reserved</p>
+        </footer>
+        <script>
+            
+            calcolate();
+            function calcolate(){
+                var number1 = parseInt(document.getElementById('firstnumber').value); 
+                var number2 = parseInt(document.getElementById('secondnumber').value); 
+                document.getElementById('result').innerHTML=number1+number2;
+            }
+                // var number1 = parseInt(document.getElementById('firstnumber').value); 
+                // var number2 = parseInt(document.getElementById('secondnumber').value); 
+                // document.getElementById('result').innerHTML=number1+number2;
+            
+            
+        </script>
+</body>
+
+</html>
