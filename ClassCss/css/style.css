@@ -1,0 +1,151 @@
+/* *****************************************************************************
+                        Normalize Css
+***************************************************************************** */
+body,
+html {
+    font-family: 'Poppins', sans-seri;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+.btn{
+    background-color: white;
+    color: black;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.clearfix {
+    clear: both;
+}
+
+/* *****************************************************************************
+                    Navbar CSS start
+***************************************************************************** */
+.navbar {
+    background-color: #255989;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+.navbar .navbar-inner {
+    padding: 10px 40px;
+}
+.navbar .logo .main-logo {
+    width: 100px;
+}
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-right ul {
+    list-style: none;
+}
+
+.float-right ul li {
+    display: inline-block;
+}
+
+.navbar .float-right ul li a.active{
+    border-bottom: 2px solid red;
+}
+.portfolio-alert {
+    position: relative;
+}
+
+.portfolio-alert .portfolio-alert-num {
+    position: absolute;
+    background: red;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    color: white;
+    top: -4px;
+    right: -5px;
+    border-radius: 50%;
+    text-align: center;
+}
+/* *****************************************************************************
+                    Navbar CSS end
+***************************************************************************** */
+/* *****************************************************************************
+                    Banner CSS start
+***************************************************************************** */
+
+header .header-banner{
+    background: url(../image/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    height: 100vh;
+    
+}
+header .header-banner .header-banner-text{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    left: 20%;
+    right: 20%;
+}
+header .header-banner .header-banner-text h2{
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+header .header-banner .header-banner-text p{
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+header .header-banner .header-banner-text .social-link{
+   margin-top: 20px;
+   padding: 20px;
+   font-size: 0.8rem;
+    
+}
+header .header-banner .header-banner-text .facebook{
+   background-color: #0D8AF0;
+   color: white;
+   border-radius: 20px;
+}
+header .header-banner .header-banner-text .twitter{
+   background-color: #00B6F1;
+   color: white;
+   border-radius: 20px;
+}
+header .header-banner .header-banner-text .youtube{
+   background-color: #FF0000;
+   color: white;
+   border-radius: 20px;
+}
+/* *****************************************************************************
+                    Banner CSS end
+***************************************************************************** */
+
+/* *****************************************************************************
+                    About Me CSS start
+***************************************************************************** */
+.content {
+    padding: 20px;
+}
+/* *****************************************************************************
+                    About Me CSS start
+***************************************************************************** */
