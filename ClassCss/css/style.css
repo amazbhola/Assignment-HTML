@@ -3,12 +3,14 @@
 ***************************************************************************** */
 body,
 html {
-    font-family: 'Poppins', sans-seri;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 16px;
 }
-
+*{
+    box-sizing: border-box;
+}
 a {
     text-decoration: none;
 }
@@ -22,7 +24,7 @@ h6 {}
 .btn{
     background-color: white;
     color: black;
-    padding: 10px 30px;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -149,3 +151,73 @@ header .header-banner .header-banner-text .youtube{
 /* *****************************************************************************
                     About Me CSS start
 ***************************************************************************** */
+/* Another css style */
+#class-css{
+    margin-top: 60px;
+}
+
+.btn-focus{
+    background-color: #FF0000;
+    border-radius: 5px ;
+    padding: 5px 10px;
+    color: white;
+    display: inline-block;
+    transition: 30ms;
+    
+}
+.btn-focus:hover{
+   background-color: #255989;
+   transform: scale(1.1);
+   
+}
+
+.btn-focus:active{
+    background-color: #099734;
+ }
+input{
+    border-radius: 5px;
+    outline: none;
+    box-shadow: #255989 2px 2px 5px 1px;
+}
+
+input:focus{
+    border: 2px solid #d3578b;
+}
+.item-list ul{
+    list-style: none;
+}
+.item-list ul li::before{
+    font: var(--fa-font-regular);
+    content: '\f007';
+    /* background-image: url(/image/businessman.jpg); */
+    background-size: 15px 15px;
+    display: inline-block;
+    width: 15px;
+    height: 14px;
+    background-repeat: no-repeat;
+}
+.text-content{
+    width: 50%;
+    float: left;
+}
+.text-content p{
+    overflow: auto;
+    max-height: 150px;
+    
+}
+.menu-bar{
+    display: none;
+}
+@media only screen and  (max-width:600px) {
+    .float-right ul {
+        display: none;
+    }
+    .menu-bar{
+        font-size: 2rem;
+        color: white;
+        display: block;
+    }
+    .text-content{
+        width: 100%;
+    }
+}
